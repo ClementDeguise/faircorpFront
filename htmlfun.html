@@ -1,0 +1,199 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="auteur" content="John Smith">
+    <meta name="description" content="une page test de tuto">
+    <link rel="stylesheet" href="style.css">
+      <title>Page test</title>
+  </head>
+  <body>
+    <header>
+    <h1>Ceci est un titre</h1>
+    </header>
+
+
+
+
+      <button class="recuperation" id="bt" v-on:click="getbat">Retrieve Buildings Informations</button>
+
+
+    <nav id="sidebar">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">L'équipe</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+       <!-- Un formulaire de recherche est une autre façon de naviguer de
+            façon non‑linéaire dans un site. -->
+
+       <form>
+         <input type="search" name="q" placeholder="Rechercher">
+         <input type="submit" value="Lancer !">
+       </form>
+     </nav>
+
+     <hr>
+
+     <main>
+
+        <p>essayons un <strong>paragraphe.</strong>
+          Un lien vers <a href="https://www.mozilla.org/" title="Page d'accueil de Mozilla" target="_blank"> un site au hasard </a>
+        </p>
+
+        <p>Les caractères spéciaux : &lt "&lt".</p>
+        <p>Un nouveau paragraphe &lt;p&gt</p>
+        <!-- commentaire -->
+        <hr>
+
+        <aside>
+        <h2>En relation</h2>
+
+          <ul>
+            <li><a href="#">Combien j'aime être près des rivages</a></li>
+            <li><a href="#">Combien j'aime être près de la mer</a></li>
+            <li><a href="#">Bien que dans le nord de l'Angleterre</a></li>
+            <li><a href="#">Il n'arrête jamais de pleuvoir</a></li>
+            <li><a href="#">Eh bien…</a></li>
+          </ul>
+        </aside>
+
+
+        <article>
+
+          <h1>L'ennui mortel</h1>
+          <p>par Chris Mills</p>
+          <h2>Chapitre I : La nuit noire</h2>
+          <p>Il faisait nuit noire. Quelque part une chouette ululait. La pluie tombait sur ...</p>
+          <h2>Chapitre II : Le silence éternel</h2>
+          <p>Notre protagoniste ne pouvait même pas murmurer à l'ombre de la silhouette...</p>
+          <h3>Le spectre parle</h3>
+          <p>Plusieurs heures s'étaient écoulées, quand soudain le spectre assis se releva et s'exclama : « S'il vous plaît, ayez pitié de mon âme ! »...</p>
+
+        </article>
+        <p> ------------------------------- </p>
+        <hr>
+        <!-- script src='script.js' type="text/javascript" -->
+        <p>"ol" pour une liste <em>ordonnée</em></p>
+        <ol>
+          <li>lait</li>
+          <li>œufs</li>
+          <li>pain</li>
+          <li>houmous</li>
+        </ol>
+        <hr>
+        <!-- noms scientifiques -->
+        <p>
+          Le colibri à gorge rouge (<i>Archilochus colubris</i>)
+          est le colibri le plus courant dans l'ouest de l'Amérique du Nord.
+        </p>
+
+        <!-- mots dans une langue étrangère -->
+        <p>
+          Le menu était un océan de mots exotiques comme <i lang="uk-latn">vatrushka</i>,
+          <i lang="id">nasi goreng</i> et <i lang="fr">soupe à l'oignon</i>.
+        </p>
+
+        <!-- une faute d'orthographe connue -->
+        <p>
+          Un jour, j'apprendrai comment mieux <u>épeler</u>.
+        </p>
+
+      </main>
+
+
+
+
+
+
+
+
+
+
+      <div id="app">
+        {{ message }}
+      </div>
+
+      <alert-box>
+        Something bad happened.
+      </alert-box>
+
+      <div id="app-7">
+        <ol>
+          <!--
+            Now we provide each todo-item with the todo object
+            it's representing, so that its content can be dynamic.
+            We also need to provide each component with a "key",
+            which will be explained later.
+          -->
+          <todo-item
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.id">
+          </todo-item>
+        </ol>
+      </div>
+
+      <div>
+        <testo></testo>
+      </div>
+
+
+
+      <tr id="row0">
+        <td id="row0_id"></td>
+        <td id ="row0_floor"></td>
+        <td id="row0_room"></td>
+        <td id="row0_status"></td>
+        <td><img id="interrupteur" src=https://images-na.ssl-images-amazon.com/images/I/61QKhYL%2BeCL.png></td>
+      </tr>
+
+      <tr id="row1">
+        <td id="row1_id"></td>
+        <td id ="row1_floor"></td>
+        <td id="row1_room"></td>
+        <td id="row1_status"></td>
+        <td><img id="interrupteur" src=https://images-na.ssl-images-amazon.com/images/I/61QKhYL%2BeCL.png></td>
+      </tr>
+
+
+
+      <tr>
+        <td id="room1_id"></td>
+        <td id ="room1_floor"></td>
+        <td id="room1_name"></td>
+        <td id="room1_building"></td>
+      </tr>
+
+
+
+
+
+<td><img class="switch" v-bind:id="item.id" v-on:click="switchlt(item.id)" src=https://images-na.ssl-images-amazon.com/images/I/61QKhYL%2BeCL.png></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+    </footer>
+
+
+  </body>
+</html>
